@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LilyCious</title>
+</head> 
+
+<body>
+
+<div id="header">
+
+<h1>Welcome to Lily's Sweet Bakery! <span> Bite into HAPPINESS >3< </span></h1><br>
+
+</div>
+
+
+
+
+<div id="nav">
+
+<a href="#header">Intro</a> | 
+<a href="#content">Content</a> | 
+<a href="#sidebar">Side Bar</a> |
+<a href="#footer">Footer</a>
+<br>
+</div>
+
+
+
+
+<div id="content">
+
+<p> Our shop has been operating <em>since 1981</em> till now. We have variety of desserts from most country in the world. 
+<span> <br> All of our product is <strong>handmade and freshly baked</strong>! </span></p> <br>
+
+<h2>Order Form</h2>
+
+<form action="" oninput="z.value=(parseInt(x.value)*3)+(parseInt(y.value)*5)">
+
+NAME: <input type="text" name="name" autofocus autocomplete><br><br>
+PHONE NUMBER: <input type="tel" name="phonenum"><br><br>
+EMAIL: <input type="email" name="useremail"><br><br>
+PICKUP DATE: <input type="date" name="date"><br><br>
+FLAVOUR: <input type="text" name="flavour" list="flavourlist" ><br> <br>
+<datalist id="flavourlist">
+<option value="Vanilla"></option>
+<option value="Chocolate"></option>
+<option value="Strawberry"></option>
+<option value="Coffee"></option>
+</datalist>
+
+ICING COLOR: <input type="color" name="color"><br><br>
+SWEETNESS: <input type="range" min="1" max="5" name="range" step="1" value="1" ><br> <br>
+
+<input type="submit" value="SUBMIT"><br><br>
+
+
+<h2>Cupcake Price Calculator</h2> 
+
+Cupcakes(RM3 each): <input type="number" id="x" name="cupcakes" min"0" value="0"><br><br>
+Cake Slice(RM5 each): <input type="number" id="y" name="cake" min="0" value="0"><br><br>
+
+Total Price: RM <output name="z" for="x y">0</output><br><br>
+
+</form>
+
+
+</div>
+
+
+
+
+<div id="sidebar">
+
+<h2>Price List</h2>
+
+<ul>
+<li>Croissant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &pound;3.50</li>
+<li>Chocolate Muffin &nbsp; &pound;4.00</li>
+<li>Blueberry Scone &nbsp;&nbsp; &pound;3.80</li>
+<li>Baguette &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &pound;5.50</li>
+</ul>
+
+<p> 1-31 Dicember BUY 3 &gt GET 1 FREE!</p><br><br><br>
+
+</div>
+
+
+
+
+<div id="footer">
+
+<p>&copy 2026 LilyCious. All rights reserved.</p>
+
+</div>
+
+
+
+
+</body>
+</html>
