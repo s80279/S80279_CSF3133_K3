@@ -1,0 +1,102 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
+}
+
+header {
+background-color: #333;
+color: #ffffff;
+text-align: center;
+padding: 20px;
+}
+
+
+h1 {
+text-decoration: underline;
+}
+
+h2 {
+text-decoration: overline;
+}
+
+h3 {
+text-decoration: line-through;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: #98bf21;
+text-align: center;
+}
+
+nav li {
+display: inline-block;
+}
+
+nav a:link, nav a:visited {
+display: block;
+color: #FFFFFF;
+background-color: #98bf21;
+width: 120px;
+text-align: center;
+padding: 10px;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+nav a:hover, nav a:active {
+background-color: #7A891A;
+}
+
+section {
+padding: 20px;
+margin: 15px auto;
+max-width: 800px;
+background: #ffffff;
+border-radius: 6px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+form {
+padding: 15px;
+background: #f1f1f1;
+border-radius: 4px;
+}
+
+input[type="text"], input[type="email"] {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+box-sizing: border-box;
+}
+
+input[type="submit"] {
+background-color: #98bf21;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+}
+
+input[type="submit"]:hover {
+background-color: #7A891A;
+}
+
+footer {
+text-align: center;
+padding: 15px;
+background-color: #333;
+color: white;
+}
+
+footer a {
+color: #98bf21;
+}

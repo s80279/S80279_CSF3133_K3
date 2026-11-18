@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>e-Café Campus</title>
+
+<link rel="stylesheet" href="cafe.css">
+<style type="text/css">
+    
+    a:link {color: #1A5276;}
+    a:visited {color: #7D3C98;}
+    a:hover {color: #E67E22;}
+    a:active {color: #C0392B;}
+    
+    h1 {text-decoration: overline;}
+    
+    p {color: #333333; text-align: justify;}
+    
+    #intro {
+        font-size: 18px;
+        background-color: #FDEBD0;
+    }
+    
+    .highlight {
+        font-weight: bold;
+        color: #C0392B;
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        color: #7F8C8D;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .feedback-form {
+        background-color: #FADBD8;
+        padding: 20px;
+        border: 1px solid #E6B0AA;
+        width: 80%;
+    }
+</style>
+</head>
+<body>
+
+
+<!-- 
+
+  1. (Line 9): list-style-type: no; -> Invalid value. Changed to 'none'.
+  2. (Line 13-16): Incorrect link state order. Reordered to link -> visited -> hover -> active.
+  3. (Line 17): text-decoration: overlined; -> Invalid value. Changed to 'overline'.
+  4. (Line 20): color #333333; -> Missing colon. Changed to 'color: #333333;'.
+  5. (Line 22-25): highlight selector missing dot class prefix. Changed to '.highlight'.
+  6. (Line 34): href="menu" -> Missing hash symbol. Changed to href="#menu".
+  7. (Line 54): <source src="cafe.mp4" type="mp4"> -> Incorrect video type format. Changed to type="video/mp4".
+  8. (Line 58): Footer lacked proper <address> and mailto link requirements.
+-->
+
+
+<header>
+    <h1>e-Café Campus</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="menu">
+    <h2>Today's Menu</h2>
+    <p class="intro">Freshly brewed coffee and local delights every day.</p>
+    
+    <article id="item">
+        <h3>Kopi Tarik</h3>
+        <p>Was <span class="old-price">RM 4.50</span>, Now Only <span class="highlight">RM 3.50</span></p>
+    </article>
+    
+    <article id="item">
+        <h3>Nasi Lemak</h3>
+        <p>Was <span class="old-price">RM 6.00</span>, Now Only <span class="highlight">RM 5.00</span></p>
+    </article>
+</section>
+
+<section id="video">
+    <h2>Watch Our Story</h2>
+    <figure>
+        <video width="400" height="300" controls>
+            <source src="cafe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <figcaption>A short clip showcasing our daily café atmosphere and freshly prepared food>
+    </figure>
+</section>
+
+<section id="feedback">
+    <h2>Customer Feedback</h2>
+    <form class="feedback-form">
+        <label>Name: <input type="text" name="name"></label><br><br>
+        <label>E-mail: <input type="email" name="email"></label><br><br>
+        
+        <p>Visit Type:</p>
+        <label><input type="radio" name="visit-type" value="dine-in"> Dine-in</label>
+        <label><input type="radio" name="visit-type" value="take-away"> Take-away</label><br><br>
+        
+        <p>Favourite Items:</p>
+        <label><input type="checkbox" name="fav" value="coffee"> Coffee</label>
+
+        <label><input type="checkbox" name="fav" value="kopi-tarik"> Kopi Tarik</label>
+        <label><input type="checkbox" name="fav" value="nasi-lemak"> Nasi Lemak</label><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer id="contact">
+    <p>&copy; 2026 e-Café Campus</p>
+    <address>
+        Contact us via email: <a href="mailto:info@ecafecampus.com">info@ecafecampus.com</a>
+    </address>
+</footer>
+</body>
+</html>
